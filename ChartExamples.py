@@ -33,6 +33,13 @@ btnChart2.place(x = 40, y = 165, width = 90, height = 30)
 lblChart2 = tk.Label(text = 'Нормальное распределение')
 lblChart2.place(x = 170, y = 172)
 
+# Добавление кнопки и метки для графика A (дополнительно)
+btnChartA = tk.Button(window, text = 'График A', font = ('Helvetica', 10, 'bold'))
+btnChartA.place(x = 40, y = 215, width = 90, height = 30)
+
+lblChartA = tk.Label(text = 'Круговая диаграмма со срезами')
+lblChartA.place(x = 170, y = 222)
+
 # Добавление кнопки закрытия программы
 btnClose = tk.Button(window, text = 'Закрыть', font = ('Helvetica', 10, 'bold'), command = do_close)
 btnClose.place(x = 330, y = 400, width = 90, height = 30)
