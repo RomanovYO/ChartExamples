@@ -2,6 +2,9 @@
 
 import tkinter as tk
 
+# Импорт внешних файлов
+import chart1
+
 # Создание главного окна
 window = tk.Tk()
 window.geometry('450x450-400+200')
@@ -16,7 +19,7 @@ lblTitle = tk.Label(text = 'Примеры построения графиков
 lblTitle.place(x = 55, y = 25)
 
 # Добавление кнопки и метки для графика 1
-btnChart1 = tk.Button(window, text = 'График 1', font = ('Helvetica', 10, 'bold'))
+btnChart1 = tk.Button(window, text = 'График 1', font = ('Helvetica', 10, 'bold'), command = chart1.plot_chart)
 btnChart1.place(x = 40, y = 115, width = 90, height = 30)
 
 lblChart1 = tk.Label(text = 'График синуса matplotlib')
