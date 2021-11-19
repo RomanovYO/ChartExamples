@@ -4,6 +4,7 @@ import tkinter as tk
 
 # Импорт внешних файлов
 import chart1
+import chart2
 
 # Создание главного окна
 window = tk.Tk()
@@ -26,7 +27,7 @@ lblChart1 = tk.Label(text = 'График синуса matplotlib')
 lblChart1.place(x = 170, y = 122)
 
 # Добавление кнопки и метки для графика 2
-btnChart2 = tk.Button(window, text = 'График 2', font = ('Helvetica', 10, 'bold'))
+btnChart2 = tk.Button(window, text = 'График 2', font = ('Helvetica', 10, 'bold'), command = chart2.plot_chart)
 btnChart2.place(x = 40, y = 165, width = 90, height = 30)
 
 lblChart2 = tk.Label(text = 'Нормальное распределение')
