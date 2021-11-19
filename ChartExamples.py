@@ -5,6 +5,7 @@ import tkinter as tk
 # Импорт внешних файлов
 import chart1
 import chart2
+import chartA
 
 # Создание главного окна
 window = tk.Tk()
@@ -34,7 +35,7 @@ lblChart2 = tk.Label(text = 'Нормальное распределение')
 lblChart2.place(x = 170, y = 172)
 
 # Добавление кнопки и метки для графика A (дополнительно)
-btnChartA = tk.Button(window, text = 'График A', font = ('Helvetica', 10, 'bold'))
+btnChartA = tk.Button(window, text = 'График A', font = ('Helvetica', 10, 'bold'), command = chartA.plot_chart)
 btnChartA.place(x = 40, y = 215, width = 90, height = 30)
 
 lblChartA = tk.Label(text = 'Круговая диаграмма со срезами')
