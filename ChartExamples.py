@@ -5,6 +5,7 @@ import tkinter as tk
 # Импорт внешних файлов
 import chart1
 import chart2
+import chart3
 import chartA
 
 # Создание главного окна
@@ -43,9 +44,9 @@ lblChart3.place(x = 170, y = y+7)
 
 # Добавление кнопки и метки для графика 4
 y += 50
-btnChart4 = tk.Button(window, text = 'График 4', font = ('Helvetica', 10, 'bold'), command = chart2.plot_chart)
+btnChart4 = tk.Button(window, text = 'График 4', font = ('Helvetica', 10, 'bold'), command = chart3.plot_chart)
 btnChart4.place(x = 40, y = y, width = 90, height = 30)
-lblChart4 = tk.Label(text = 'Описание графика 4')
+lblChart4 = tk.Label(text = 'Гистограмма Seaborn')
 lblChart4.place(x = 170, y = y+7)
 
 # Добавление кнопки и метки для графика 5
