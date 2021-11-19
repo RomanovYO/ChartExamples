@@ -36,7 +36,7 @@ lblChart2.place(x = 170, y = y+7)
 
 # Добавление кнопки и метки для графика 3
 y += 50
-btnChart3 = tk.Button(window, text = 'График 3', font = ('Helvetica', 10, 'bold'), command = chart2.plot_chart)
+btnChart3 = tk.Button(window, text = 'График 3', font = ('Helvetica', 10, 'bold'), command = chart2.plot_chart2)
 btnChart3.place(x = 40, y = y, width = 90, height = 30)
 lblChart3 = tk.Label(text = 'Нормальное распределение - 3 графика')
 lblChart3.place(x = 170, y = y+7)
