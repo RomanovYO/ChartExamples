@@ -51,9 +51,9 @@ lblChart4.place(x = 170, y = y+7)
 
 # Добавление кнопки и метки для графика 5
 y += 50
-btnChart5 = tk.Button(window, text = 'График 5', font = ('Helvetica', 10, 'bold'), command = chart2.plot_chart)
+btnChart5 = tk.Button(window, text = 'График 5', font = ('Helvetica', 10, 'bold'), command = chart3.plot_chart2)
 btnChart5.place(x = 40, y = y, width = 90, height = 30)
-lblChart5 = tk.Label(text = 'Описание графика 5')
+lblChart5 = tk.Label(text = 'Сдвоенная гистограмма Seaborn')
 lblChart5.place(x = 170, y = y+7)
 
 # Добавление кнопки и метки для графика 6
